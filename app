@@ -1,6 +1,6 @@
 #flask application
 
-from flask import flask
+from flask import Flask
 import os 
 app = flask(_name_)
 
