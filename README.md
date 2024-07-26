@@ -26,7 +26,8 @@ The application is a simple Flask web server that displays "time table for PGDE 
    Run `docker build -t app .` to build the image.
 
 6. **Run the Docker Container**
-   Start the container with `docker run -p 5000:5000 app`.
+   Start the container with `docker run -p 5000:5000 app`
+
 
 ## Author
 
