@@ -1,0 +1,21 @@
+sudo apt-get update
+sudo apt install mysql-server
+sudo ufw allow 3306/tcp
+sudo ufw enable
+sudo ufw reload
+sudo mysql
+CREATE USER 'john'@'%' IDENTIFIED BY 'John@1234';
+CREATE DATABASE webapp_db;
+GRANT ALL PRIVILEGES ON webapp_db.* TO 'john'@'%';
+FLUSH PRIVILEGES;
+USE webapp_db;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+EXIT
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+#####comment bind address#####
+sudo service mysql restart
+
