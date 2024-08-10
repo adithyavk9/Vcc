@@ -4,9 +4,9 @@ sudo ufw allow 3306/tcp
 sudo ufw enable
 sudo ufw reload
 sudo mysql
-CREATE USER 'john'@'%' IDENTIFIED BY 'John@1234';
+CREATE USER 'adithya'@'%' IDENTIFIED BY 'adithya@123';
 CREATE DATABASE webapp_db;
-GRANT ALL PRIVILEGES ON webapp_db.* TO 'john'@'%';
+GRANT ALL PRIVILEGES ON webapp_db.* TO 'adithya'@'%';
 FLUSH PRIVILEGES;
 USE webapp_db;
 CREATE TABLE users (
