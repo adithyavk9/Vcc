@@ -1,8 +1,8 @@
 <?php
 $servername = "vm-g23ai2042-2_IP";
-$username = "john";
-$password = "John@1234";
-$dbname = "testdb";
+$username = "adithya";
+$password = "adithya@123";
+$dbname = "webapp_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
